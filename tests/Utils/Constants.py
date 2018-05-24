@@ -13,3 +13,4 @@ DEFAULT_ALBUM_NAME = "Личные фото"
 DOWNLOAD_IMAGE_NAME = "something.png"
 RESOURCES_PATH = os.getcwd() + '/tests/Resources/'
 PROJECT_PATH = os.getcwd()
+BIG_PICTURE_NAME = "big_picture.jpg"

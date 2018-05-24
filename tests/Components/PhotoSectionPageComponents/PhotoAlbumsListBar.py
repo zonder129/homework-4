@@ -10,6 +10,7 @@ class PhotoAlbumsListBar(Component):
     CREATE_ALBUM_LINK = '//a[@class="portlet_h_ac lp"]'
     DEFAULT_ALBUM = '//li[@class="ugrid_i"]'
     ALBUM_LIST = '//ul[@class="ugrid_cnt"]'
+    NUMBER_OF_PHOTOS_IN_DEFAULT_ALBUM = '//div[contains(@class,"col-card_num")]'
 
     def open_create_album_popup(self):
         self.driver.find_element_by_xpath(self.CREATE_ALBUM_LINK).click()
@@ -33,4 +34,6 @@ class PhotoAlbumsListBar(Component):
             return False
         return True
 
+    def get_number_of_photos_in_default_album(self):
+        return self.driver.find_element_by_xpath(self.NUMBER_OF_PHOTOS_IN_DEFAULT_ALBUM).text
 
