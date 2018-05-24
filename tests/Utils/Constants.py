@@ -10,3 +10,6 @@ SPACED_NAME = " spaces_all_around "
 SPACED_NAME_TO_CHECK = "spaces_all_around"
 TEST_IMAGE_NAME = "testimage.png"
 DEFAULT_ALBUM_NAME = "Личные фото"
+DOWNLOAD_IMAGE_NAME = "something.png"
+RESOURCES_PATH = os.getcwd() + '/tests/Resources/'
+PROJECT_PATH = os.getcwd()

@@ -43,7 +43,7 @@ class CreateAlbumTests(unittest.TestCase):
 
         self.methods.create_album_from_photo_section_page(Constants.COMMON_NAME)
 
-        self.methods.redirect_from_album_page_to_photo_section()
+        self.common_methods.redirect_to_photo_section_with_main_top_content_bar()
 
         photo_album_list = PhotoSectionPage(self.driver).photo_albums_list_bar
 
@@ -77,7 +77,7 @@ class CreateAlbumTests(unittest.TestCase):
 
         self.methods.create_album_from_photo_section_page(Constants.SPACED_NAME)
 
-        self.methods.redirect_from_album_page_to_photo_section()
+        self.common_methods.redirect_to_photo_section_with_main_top_content_bar()
 
         photo_album_list = PhotoSectionPage(self.driver).photo_albums_list_bar
 

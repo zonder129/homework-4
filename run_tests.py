@@ -8,7 +8,7 @@ from tests.CreateAlbumTests import CreateAlbumTests
 
 if __name__ == '__main__':
     suite = unittest.TestSuite((
-        unittest.makeSuite(CreateAlbumTests),
+        # unittest.makeSuite(CreateAlbumTests),
         unittest.makeSuite(AddImageTests),
     ))
     result = unittest.TextTestRunner().run(suite)

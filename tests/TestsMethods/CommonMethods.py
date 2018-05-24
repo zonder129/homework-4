@@ -33,3 +33,8 @@ class CommonMethods:
 
         quit_popup = common_page.quit_popup
         quit_popup.definitely_quit_profile()
+
+    def redirect_to_photo_section_with_main_top_content_bar(self):
+        common_page = CommonPage(self.driver)
+        common_page.main_top_content_bar.redirect_to_photo_section()
+

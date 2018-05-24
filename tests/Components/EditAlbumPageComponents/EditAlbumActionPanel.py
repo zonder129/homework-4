@@ -6,7 +6,7 @@ from tests.Components.EditAlbumPageComponents.DeleteAlbumPopUp import DeleteAlbu
 
 
 class EditAlbumActionPanel(Component):
-    EDIT_CONFIRM = '//div[@id="hook_Block_UserAlbumEditBlock"]'
+    EDIT_CONFIRM = '//div[@data-module = "PhotoEdit"]'
     ACTIONS_PANEL = '//div[@class="photo-panel_info js-photo-album-panel"]'
     DELETE_ALBUM_LINK = '//a[contains(text(), "Удалить альбом")]'
 

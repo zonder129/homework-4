@@ -1,3 +1,4 @@
+from tests.Components.CommonComponents.MainTopContentBar import MainTopContentBar
 from tests.Components.CommonComponents.NavigationToolBar import NavigationToolBar
 from tests.Components.CommonComponents.QuitPopUp import QuitPopUp
 from tests.Pages.Page import Page
@@ -13,3 +14,7 @@ class CommonPage(Page):
     @property
     def quit_popup(self):
         return QuitPopUp(self.driver)
+
+    @property
+    def main_top_content_bar(self):
+        return MainTopContentBar(self.driver)

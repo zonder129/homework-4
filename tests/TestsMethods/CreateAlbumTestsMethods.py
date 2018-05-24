@@ -19,12 +19,6 @@ class CreateAlbumTestsMethods:
         create_album_popup.set_album_name(name)
         create_album_popup.submit_album_creation()
 
-    def redirect_from_album_page_to_photo_section(self):
-        album_page = AlbumPage(self.driver)
-
-        content_bar = album_page.main_top_content_bar
-        content_bar.redirect_to_foto_section()
-
     def delete_album_from_photo_section(self, name):
         photo_section_page = PhotoSectionPage(self.driver)
 

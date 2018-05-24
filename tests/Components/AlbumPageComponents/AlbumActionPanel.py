@@ -5,8 +5,8 @@ from tests.Components.EditAlbumPageComponents.EditAlbumActionPanel import EditAl
 
 
 class AlbumActionPanel(Component):
-    EDIT_BUTTON = '//div[@class="photo-menu_edit iblock-cloud_show"]/a'
-    CONFIRM_ALBUM_OPENED = '//div[@id="hook_Block_UserAlbumPhotosMRB"]'
+    EDIT_BUTTON = '//div[contains(@class, "photo-menu_edit")]/a'
+    CONFIRM_ALBUM_OPENED = '//div[@id="hook_Block_UserPhotosMRB"]'
 
     def edit_album(self):
         self.driver.find_element_by_xpath(self.EDIT_BUTTON).click()

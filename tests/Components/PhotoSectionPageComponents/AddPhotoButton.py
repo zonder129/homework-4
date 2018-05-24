@@ -1,8 +1,10 @@
+import os
+
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
 
 from tests.Components.Component import Component
-from tests.Recources import Path
+from tests.Utils import Constants
 
 
 class AddPhotoButton(Component):
@@ -10,7 +12,7 @@ class AddPhotoButton(Component):
     CONFIRM_FILE_UPLOADING = '//div[@class="photo-sc __self uploading-album"]'
 
     def upload_file(self, filename):
-        self.driver.find_element_by_xpath(self.INPUT_FOR_UPLOAD).send_keys(Path.RESOURCES_PATH + filename)
+        self.driver.find_element_by_xpath(self.INPUT_FOR_UPLOAD).send_keys(Constants.RESOURCES_PATH + filename)
 
     def check_upload_start_successfully(self):
         try:

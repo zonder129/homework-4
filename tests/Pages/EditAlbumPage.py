@@ -1,5 +1,6 @@
 from tests.Components.EditAlbumPageComponents.DeleteAlbumPopUp import DeleteAlbumPopUp
 from tests.Components.EditAlbumPageComponents.EditAlbumActionPanel import EditAlbumActionPanel
+from tests.Components.EditAlbumPageComponents.EditAlbumListOfPhotos import EditAlbumListOfPhotos
 from tests.Pages.Page import Page
 
 
@@ -13,3 +14,7 @@ class EditAlbumPage(Page):
     @property
     def delete_album_popup(self):
         return DeleteAlbumPopUp(self.driver)
+
+    @property
+    def list_of_photos(self):
+        return EditAlbumListOfPhotos(self.driver)
