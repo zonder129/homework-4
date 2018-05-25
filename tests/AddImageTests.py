@@ -34,7 +34,6 @@ class AddImageTests(unittest.TestCase):
     def tearDownClass(cls):
         cls.driver.quit()
 
-
     def test_image_add_in_default_album(self):
         self.methods.upload_image(Constants.TEST_IMAGE_NAME)
 
